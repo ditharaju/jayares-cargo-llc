@@ -1,0 +1,14 @@
+<div class="module-border-wrap">
+    <div class="module flex items-center justify-between">
+        <div class="flex justify-start text-black">
+            Icon goes here
+        </div>
+        <div class="flex justify-end">
+            <button *ngFor="let tab of ['About Us', 'Our Services', 'Contacts']"
+                class="px-3 py-2 rounded-md hover:bg-[#07f6fa] hover:text-black"
+                [ngClass]="{ 'bg-[#07f6fa] text-black': selectedTab === tab }" (click)="onTabClick(tab)">
+                {{ tab }}
+            </button>
+        </div>
+    </div>
+</div>
