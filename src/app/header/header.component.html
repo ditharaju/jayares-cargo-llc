@@ -1,14 +1,15 @@
-<div class="module-border-wrap">
-    <div class="module flex items-center justify-between">
-        <div class="flex justify-start text-black">
-            Icon goes here
+<div class="header-border">
+    <div class="flex items-center justify-between">
+        <div class="flex justify-start ml-5">
+            <img src="/assets/images/logo-icon.png" alt="logo-icon" width="50" height="60">
+            <img src="/assets/images/logo-name.png" alt="logo-name" width="170" height="60">
         </div>
-        <div class="flex justify-end">
-            <button *ngFor="let tab of ['About Us', 'Our Services', 'Contacts']"
-                class="px-3 py-2 rounded-md hover:bg-[#07f6fa] hover:text-black"
-                [ngClass]="{ 'bg-[#07f6fa] text-black': selectedTab === tab }" (click)="onTabClick(tab)">
+        <div class="flex justify-end text-emerald-950 mr-5">
+            <a *ngFor="let tab of ['About Us', 'Our Services', 'Contacts']"
+                class="font-bold px-3 py-2 mr-1 rounded-md hover:bg-[#06bc91] hover:text-[#2f5f48]"
+                [ngClass]="{ 'bg-[#06bc91] text-white' : selectedTab === tab }" (click)="onTabClick(tab)">
                 {{ tab }}
-            </button>
+            </a>
         </div>
     </div>
 </div>
