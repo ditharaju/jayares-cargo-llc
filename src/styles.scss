@@ -16,3 +16,27 @@
   margin: auto;
   padding: 0% 5% 0% 0%;
 }
+
+@media only screen and (max-width: 320px) {
+  .main-title {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .main-title {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .main-title {
+    font-size: 55px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .main-title {
+    font-size: 70px;
+  }
+}

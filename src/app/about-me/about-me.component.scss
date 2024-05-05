@@ -3,12 +3,8 @@ div {
   color: black;
 }
 
-.main-title {
+.title {
   text-align: center;
-}
-
-.text-info {
-  margin-left: 5%;
 }
 
 img {
@@ -16,6 +12,40 @@ img {
   width: 80%;
 }
 .text-info {
-  margin: 5% auto;
+  margin: 0% 8%;
   padding: 0% 5% 0% 0%;
+}
+
+:root {
+  font-family: sans-serif;
+
+  --image-size: 400px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.alt-1 {
+  width: var(--image-size);
+  height: var(--image-size);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25% 75% / 50%;
+}
+.alt-2 {
+  width: var(--image-size);
+  height: var(--image-size);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 75% 25% / 50%;
+}
+
+.align-middle {
+  margin-left: auto;
+  margin-right: auto;
 }

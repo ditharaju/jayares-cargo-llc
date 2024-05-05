@@ -1,15 +1,12 @@
-<div class="header-border">
-    <div class="flex items-center justify-between">
-        <div class="flex justify-start ml-5">
-            <img src="/assets/images/logo-icon.png" alt="logo-icon" width="70" height="60">
-            <img src="/assets/images/logo-name.png" alt="logo-name" width="200" height="70">
-        </div>
-        <div class="flex justify-end text-emerald-950 mr-5">
-            <a *ngFor="let tab of ['About Us', 'Our Services', 'Contacts']"
-                class="font-bold px-3 py-2 mr-1 rounded-md hover:bg-[#06bc91] hover:text-[#2f5f48]"
-                [ngClass]="{ 'bg-[#06bc91] text-white' : selectedTab === tab }" (click)="onTabClick(tab)">
-                {{ tab }}
-            </a>
-        </div>
+<div class="header-border grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div class="flex justify-start ml-5 col-span-2">
+        <img src="/assets/images/logo-name.png" alt="logo-name" width="200" height="70">
+    </div>
+    <div class="flex justify-end text-emerald-950 mr-5">
+        <a *ngFor="let tab of ['About Us', 'Our Services', 'Contacts']"
+            class="font-bold px-3 py-2 mr-1 rounded-md hover:bg-[#06bc91] hover:text-[#2f5f48]"
+            [ngClass]="{ 'bg-[#06bc91] text-white' : selectedTab === tab }" (click)="onTabClick(tab)">
+            {{ tab }}
+        </a>
     </div>
 </div>
