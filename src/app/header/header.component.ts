@@ -10,15 +10,16 @@ import { Router } from '@angular/router';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent implements OnInit {
-  selectedTab: string = 'About Us';
+  selectedTab: string = 'Home';
   routeMap: any = {
+    'Home': 'home',
     'About Us': 'about-us',
     'Our Services': 'our-services',
     'Contacts': 'contacts',
   };
 
   ngOnInit() {
-    this.selectedTab = 'About Us';
+    this.selectedTab = 'home';
     this.router.navigate([this.routeMap[this.selectedTab]]); // Navigate based on tab
   }
 
@@ -26,7 +27,6 @@ export class HeaderComponent implements OnInit {
 
   onTabClick(tab: string) {
     this.selectedTab = tab;
-
     this.router.navigate([this.routeMap[tab]]);
   }
 }

@@ -3,3 +3,27 @@ div {
   color: #f3f2ec;
   padding: 2% 10% 2% 10%;
 }
+
+.main-title {
+  color: #f3f2ec;
+  font-size: 25px;
+}
+
+div {
+  background-color: #2f5f48;
+  color: #f3f2ec;
+  padding: 2% 5% 2% 5%;
+}
+
+.google-map {
+  padding-bottom: 50%;
+  position: relative;
+}
+
+.google-map iframe {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
