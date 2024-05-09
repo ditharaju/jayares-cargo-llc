@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'contacts',
@@ -10,3 +10,4 @@ import { Component } from '@angular/core';
 export class ContactsComponent {
   email = 'info@jayarescargo.com';
 }
+

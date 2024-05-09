@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'intro',
+  selector: 'home',
   standalone: true,
   imports: [],
   templateUrl: './intro.component.html',
